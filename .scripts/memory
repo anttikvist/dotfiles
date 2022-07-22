@@ -1,0 +1,3 @@
+#!/bin/bash 
+mem="$(free -h | awk 'NR==2{printf $3}')"
+printf "🧠 $mem"
