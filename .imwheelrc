@@ -1,0 +1,19 @@
+# Google Chrome
+"^Google-chrome$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+
+# Firefox
+"^firefox$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+
+# Spotify
+"^Spotify$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
+
+# Discord
+"^discord$"
+    None, Up, Button4, 2
+    None, Down, Button5, 2
