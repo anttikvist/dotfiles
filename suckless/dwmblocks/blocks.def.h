@@ -2,11 +2,11 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/				/*Update Interval*/	/*Update Signal*/
 /*	{"Oulu: ",	"~/.scripts/weather",			600,			0}, */
-	{"",		"~/.scripts/updates",			600,			0},
-	{"",		"~/.scripts/memory",			5,			0},
-	{"",		"~/.scripts/disk",			30,			0},
+/*	{"",		"~/.scripts/updates",			600,			0}, */
+	{"",		"~/.scripts/memory",			5,			0}, 
+	{"",		"~/.scripts/disk",			30,			0}, 
 	{"",		"~/.scripts/battery",			10,			0},
-	{"", 		"~/.scripts/volume",			0,			10},	
+	{"", 		"~/.scripts/volume",			0,			10}, 
 	{"", 		"date '+%a %d. %Bta %H:%M'",		5,			0},
 };
 
