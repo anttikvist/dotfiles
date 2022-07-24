@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+notify-send -t 4500 "$(curl -s 'wttr.in/Oulu?format=3')"
