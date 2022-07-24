@@ -15,13 +15,13 @@ static const unsigned int gappov    = 14;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:size=11", "Noto Color Emoji:pixelsize=11:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono:size=11", "Noto Color Emoji:pixelsize=13:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrains Mono:size=11";
-static const char col_gray1[]       = "#1a1b26";
-static const char col_gray2[]       = "#1a1b26";
+static const char col_gray1[]       = "#282a36";
+static const char col_gray2[]       = "#282a36";
 static const char col_gray3[]       = "#f8f8f2";
 static const char col_gray4[]       = "#f8f8f2";
-static const char col_gray5[]       = "#aaaaaa";
+static const char col_gray5[]       = "#bd93f9";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */

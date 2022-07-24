@@ -1,7 +1,7 @@
 # Parts of this config were created by Derek Taylor, AKA DistroTube. The rest was created by Matt Weber aka The Linux Cast
 
 font:
-  size: 9
+  size: 8
   offset:
     y: 1
   normal:
@@ -14,7 +14,7 @@ window:
   dimensions:
     columns: 120
     lines: 30
-  opacity: 0.85
+  opacity: 0.95
 
 cursor:
   unfocused_hollow: true
@@ -717,7 +717,7 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 
-colors: *tokyo-night
+colors: *dracula
 
 #######################################
 ##       END OF COLOR SCHEMES        ##

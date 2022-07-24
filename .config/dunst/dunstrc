@@ -12,7 +12,7 @@
 #----------------------------------------------------------------------------------
 
 [global]
-    font = JetBrains Mono 12
+    font = JetBrains Mono 11
     markup = yes
     format = "<b>%s</b>\n%b"
     sort = yes
@@ -22,7 +22,7 @@
     word_wrap = yes
     ignore_newline = no
     origin = top-center
-    width = 500
+    width = 400
     height = 300
     shrink = no
     transparency = 0
@@ -41,17 +41,17 @@
     browser = /usr/bin/google-chrome-stable
     icon_position = left
     icon_path = /usr/share/icons/Faba/32x32/status/:/usr/share/icons/Faba/32x32/devices/
-    frame_width = 6
-	frame_color = "#aaaaaa"
+    frame_width = 3
+	frame_color = "#bd93f9"
 	separator_color= frame
 
 [urgency_low]
-background = "#1a1b26"
-foreground = "#CAD3F5"
+background = "#282a36"
+foreground = "#f8f8f2"
 
 [urgency_normal]
-background = "#1a1b26"
-foreground = "#CAD3F5"
+background = "#282a36"
+foreground = "#f8f8f2"
 
 [urgency_critical]
 background = "#24273A"
