@@ -105,6 +105,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F4,	   spawn,	   SHCMD("feh --randomize --bg-fill ~/Dropbox/Kuvat/Taustakuvat/*") },
 	{ MODKEY|ShiftMask,		XK_x,	   spawn,	   SHCMD("/home/antti/.scripts/power") },
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("/home/antti/.scripts/get-weather") },
+	{ MODKEY|ShiftMask,		XK_n,	   spawn,	   SHCMD("/home/antti/.config/rofi/rofi-network-manager.sh") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
