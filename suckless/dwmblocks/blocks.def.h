@@ -7,7 +7,7 @@ static const Block blocks[] = {
 	{"",		"~/.scripts/disk",			30,			0}, 
 	{"",		"~/.scripts/battery",			10,			0},
 	{"", 		"~/.scripts/volume",			0,			10}, 
-	{"", 		"date '+%a %d. %Bta %H:%M'",		5,			0},
+	{"", 		"date '+%H:%M'",			5,			0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.

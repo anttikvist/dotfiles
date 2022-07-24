@@ -1,2 +1,0 @@
-#!/bin/bash
-acpi -b | awk 'NR==1{print "Battery:" " " $4}'

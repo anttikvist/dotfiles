@@ -86,7 +86,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,             		XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,	                XK_r,      spawn,          SHCMD("rofi -modi drun -show drun -show-icons") },
 	{ MODKEY,	                XK_period, spawn,          SHCMD("rofi -modi emoji -show emoji") },
 	{ MODKEY,			XK_comma,  spawn,	   SHCMD("rofi -show calc -modi calc -no-show-match -no-sort") },
@@ -106,10 +106,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F8,	   spawn,	   SHCMD("alacritty -e htop") },
 	{ MODKEY|ShiftMask,		XK_x,	   spawn,	   SHCMD("/home/antti/.scripts/power") },
 	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("/home/antti/.scripts/get-weather") },
-	{ MODKEY|ShiftMask,		XK_n,	   spawn,	   SHCMD("/home/antti/.config/rofi/rofi-network-manager.sh") },
 	{ MODKEY|ShiftMask,		XK_u,	   spawn,	   SHCMD("/home/antti/.scripts/get-updates") },
-	{ MODKEY,			XK_v,	   spawn,	   SHCMD("/home/antti/.scripts/get-volume") },
-	{ MODKEY,			XK_s,	   spawn,	   SHCMD("/home/antti/.scripts/get-song") },
 	{ MODKEY|ControlMask,           XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },

@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-notify-send -t 3500 "🎵 $(/home/antti/.scripts/spotify.py)"
