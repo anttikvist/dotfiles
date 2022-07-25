@@ -7,8 +7,8 @@ dunst &
 ~/.fehbg &
 nm-applet &
 # volumeicon &
-# dropbox &
+dropbox &
 xfce4-power-manager &
-nvidia-settings -a "[gpu:0]/GpuPowerMizerMode=1" &
+# nvidia-settings -a "[gpu:0]/GpuPowerMizerMode=1" &
 imwheel &
 numlockx on &
