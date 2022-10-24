@@ -386,7 +386,7 @@ StScrollBar {
 .prompt-dialog {
   width: 34em;
   border: none;
-  border-radius: 2px; }
+  border-radius: 10px; }
   .prompt-dialog .message-dialog-main-layout {
     spacing: 24px;
     padding: 10px; }
@@ -522,7 +522,8 @@ StScrollBar {
 
 .popup-menu-item {
   spacing: 6px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background-gradient-direction: none; }
   .popup-menu-item:ltr {
     padding-left: 6px; }
   .popup-menu-item:rtl {
@@ -898,9 +899,11 @@ StScrollBar {
   padding: 0.1em;
   margin: 2px;
   border-radius: 99px;
-  color: #C3C7D1; }
+  color: #C3C7D1;
+  background-gradient-direction: none; }
   .calendar-day-base:hover, .calendar-day-base:focus {
-    background-color: #333545; }
+    background-color: #373a4b;
+    box-shadow: none; }
   .calendar-day-base:active, .calendar-day-base:selected {
     color: white;
     background-color: rgba(189, 147, 249, 0.5);
@@ -985,12 +988,10 @@ StScrollBar {
 .message {
   background: #282a36;
   border: 1px solid #1b1c24;
-  border-radius: 7px;
+  border-radius: 8px;
   box-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #2f313f;
-    box-shadow: 2px 0px 0px 0px #bd93f9 inset;
-    border-radius: 1px 7px 7px 1px; }
+    background-color: #313342; }
 
 .message-close-button {
   color: #C3C7D1; }
@@ -1391,7 +1392,10 @@ StScrollBar {
   border-radius: 10px; }
 
 .app-folder-dialog {
-  background-color: #21232d; }
+  background-color: #21232d;
+  border: none; }
+  .app-folder-dialog .folder-name-label {
+    color: #C3C7D1; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;

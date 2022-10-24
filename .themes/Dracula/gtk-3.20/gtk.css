@@ -214,6 +214,10 @@ read if you used those and something break with a version upgrade you're on your
    or better, just don't.
    Everytime a wildcard is used a kitten dies, painfully.
 */
+selection {
+  background-color: rgba(189, 147, 249, 0.5);
+  color: #f8f8f2; }
+
 *:disabled {
   -gtk-icon-effect: dim; }
 
@@ -6208,7 +6212,7 @@ ConversationListView {
 
 scrolledwindow.sidebar treeview.view, scrollbar.right {
   background: #232530;
-  padding: 6px 1.5px;
+  padding: 2.5px 1.5px;
   border: none;
   box-shadow: none; }
 
@@ -6245,10 +6249,11 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
     border-radius: 7px;
     box-shadow: none;
     text-shadow: none;
-    font-weight: bold; }
+    font-weight: bold;
+    border-radius: 0; }
 .nemo-window .sidebar {
   color: #f8f8f2;
-  background-color: #282a36; }
+  background-color: #232530; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
