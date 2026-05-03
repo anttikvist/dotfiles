@@ -1,0 +1,198 @@
+:root{
+    --width: 800px;
+    --height: 360px;
+    --padding: 20px;
+    --unpressed: #555;
+    --pressed: #ddd;
+    --bumper-width: 260px;
+    --bumper-height: 30px;
+    --button-size: 90px;
+    --button-gap: 80px;
+    --dpad-length: 90px;
+    --dpad-width: 80px;
+    --dpad-border-radius: 10px;
+}
+
+.controller.custom{
+    width: var(--width);
+    height: var(--height);
+}
+
+/* Shoulder buttons (overlap for increased compatibility) */
+.custom .triggers, .custom .bumpers{ 
+    width: calc(var(--width) - calc(var(--padding) * 2));
+    height: var(--bumper-height);
+    position: absolute;
+    left: var(--padding);
+    top: var(--padding);
+}
+.custom .trigger-button, .custom .bumper{
+    width: var(--bumper-width);
+    height: var(--bumper-height);
+    background-color: var(--unpressed);
+}
+.custom .trigger-button.left, .custom .bumper.left{
+    float: left;
+    border-radius: var(--bumper-height) 5px 5px 5px;
+}
+.custom .trigger-button.right, .custom .bumper.right{
+    float: right;
+    border-radius: 5px var(--bumper-height) 5px 5px;
+}
+.custom .trigger-button.pressed, .custom .bumper.pressed{
+    background-color: var(--pressed);
+}
+.custom .bumper{
+    opacity: 0;
+}
+.custom .bumper.pressed{
+    opacity: 1;
+}
+
+/* Start and select */
+.custom .arrows{
+    position: absolute;
+    width: 200px;
+    height: 36px;
+    bottom: 40px;
+    left: 300px;
+}
+.custom .back, .custom .start{
+    border-radius: 18px;
+    height: 100%;
+    width: 90px;
+    background-color: var(--unpressed);
+    rotate: -35deg;
+}
+.custom .back.pressed, .custom .start.pressed{
+    background-color: var(--pressed);
+}
+.custom .back{
+    float: left;
+}
+.custom .start{
+    float: right;
+}
+
+/* Face buttons */
+.custom .abxy{
+    position: absolute;
+    width: calc(calc(var(--button-size) * 2) + var(--button-gap));
+    height: calc(calc(var(--button-size) * 2) + var(--button-gap));
+    bottom: var(--padding);
+    right: var(--padding);
+}
+.custom .button{
+    position: absolute;
+    width: var(--button-size);
+    height: var(--button-size);
+    border-radius: 100%;
+    background-color: var(--unpressed);
+}
+.custom .button.pressed{
+    background-color: var(--pressed)
+}
+.custom .a{
+    bottom: 0;
+    left: calc(calc(var(--button-size) + var(--button-gap)) / 2);
+}
+.custom .b{
+    top: calc(calc(var(--button-size) + var(--button-gap)) / 2);
+    right: 0px;
+}
+.custom .x{
+    top: calc(calc(var(--button-size) + var(--button-gap)) / 2);
+    left: 0;
+}
+.custom .y{
+    left: calc(calc(var(--button-size) + var(--button-gap)) / 2);
+    top: 0;
+}
+
+/* D-pad */
+.custom .dpad{
+    position: absolute;
+    width: calc(calc(var(--dpad-length) * 2) + var(--dpad-width));
+    height: calc(calc(var(--dpad-length) * 2) + var(--dpad-width));
+    bottom: var(--padding);
+    left: var(--padding);
+}
+.custom .face{
+    position: absolute;
+    background-color: var(--unpressed)
+}
+.custom .face.up, .custom .face.down{
+    width: var(--dpad-width);
+    height: var(--dpad-length);
+    left: var(--dpad-length);
+}
+.custom .face.left, .custom .face.right{
+    width: var(--dpad-length);
+    height: var(--dpad-width);
+    top: var(--dpad-length);
+}
+.custom .face:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.custom .face.up:before{
+    top: 100%;
+    left: 0;
+    border-left: calc(var(--dpad-width) / 2) solid transparent;
+    border-top: calc(var(--dpad-width) / 2) solid var(--unpressed);
+    border-right: calc(var(--dpad-width) / 2) solid transparent;
+}
+.custom .face.up.pressed:before{
+    border-top: calc(var(--dpad-width) / 2) solid var(--pressed);
+}
+.custom .face.down:before{
+    bottom: 100%;
+    left: 0;
+    border-left: calc(var(--dpad-width) / 2) solid transparent;
+    border-bottom: calc(var(--dpad-width) / 2) solid var(--unpressed);
+    border-right: calc(var(--dpad-width) / 2) solid transparent;
+}
+.custom .face.down.pressed:before{
+    border-bottom: calc(var(--dpad-width) / 2) solid var(--pressed);
+}
+.custom .face.left:before{
+    top: 0;
+    left: 100%;
+    border-top: calc(var(--dpad-width) / 2) solid transparent;
+    border-left: calc(var(--dpad-width) / 2) solid var(--unpressed);
+    border-bottom: calc(var(--dpad-width) / 2) solid transparent;
+}
+.custom .face.left.pressed:before{
+    border-left: calc(var(--dpad-width) / 2) solid var(--pressed);
+}
+.custom .face.right:before{
+    top: 0;
+    right: 100%;
+    border-top: calc(var(--dpad-width) / 2) solid transparent;
+    border-right: calc(var(--dpad-width) / 2) solid var(--unpressed);
+    border-bottom: calc(var(--dpad-width) / 2) solid transparent;
+}
+.custom .face.right.pressed:before{
+    border-right: calc(var(--dpad-width) / 2) solid var(--pressed);
+}
+.custom .face.up{
+    top: 0;
+    border-radius: var(--dpad-border-radius) var(--dpad-border-radius) 0 0;
+}
+.custom .face.down{
+    bottom: 0;
+    border-radius: 0 0 var(--dpad-border-radius) var(--dpad-border-radius);
+}
+.custom .face.left{
+    left: 0;
+    border-radius: var(--dpad-border-radius) 0 0 var(--dpad-border-radius);
+}
+.custom .face.right{
+    right: 0;
+    border-radius: 0 var(--dpad-border-radius) var(--dpad-border-radius) 0;
+}
+.custom .face.pressed{
+    background-color: var(--pressed);
+}
